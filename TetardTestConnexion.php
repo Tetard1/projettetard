@@ -14,4 +14,15 @@ if ($donne == NULL) {
 }
 else
     echo "vous êtes connecter ! ";
+
+
+$name = array("$_POST[nom]", "$_POST[prenom]", "$_POST[email]");
+arsort($name);
+
+foreach ($name as $x => $x_value) {
+    echo "Key=" . $x . ", Value=" . $x_value;
+    echo "<br>";
+}
+
+
 ?>
