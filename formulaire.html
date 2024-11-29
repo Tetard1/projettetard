@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<form action="exercice_test.php" method="post">
+
+    <table style="width:100%">
+        <tr>
+            <th>Nom :</th>
+            <th><input type="text" name="nom" size="25"><br></th>
+        </tr>
+        <tr>
+            <th>Prénom :</th>
+            <th><input type="text" name="prenom" size="25"><br></th>
+        </tr>
+        <tr>
+            <th>Email :</th>
+            <th><input type="email" name="email" size="25"><br></th>
+        </tr>
+        <tr>
+            <th>Tel_fixe :</th>
+            <th><input type="text" name="tel_fixe" maxlength="10" size="8"><br></th>
+        </tr>
+        <tr>
+            <th>Tel_portable :</th>
+            <th><input type="text" name="tel_portable" maxlength="10" size="8"><br></th>
+        </tr>
+        <tr>
+            <th>Rue :</th>
+            <th><input type="text" name="rue" size="25"><br></th>
+        </tr>
+        <tr>
+            <th>Code_postal :</th>
+            <th><input type="text" name="cp" maxlength="5" size="3"><br></th>
+        </tr>
+        <tr>
+            <th>Ville :</th>
+            <th><input type="text" name="ville" size="25"><br></th>
+        </tr>
+        <tr>
+            <th> Mot de passe :</th>
+            <th><input type="password" name="mdp" minlength="10" maxlength="30" size="25"><br></th>
+        </tr>
+    </table>
+
+    <input type="submit" value="Valider">
+    <input type="reset" value="Reset">
+
+
+
+
+</form>
+</body>
+</html>
