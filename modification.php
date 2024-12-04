@@ -1,7 +1,7 @@
 <?php
 var_dump($_POST);
 $bdd = new PDO('mysql:host=localhost;dbname=tli3;charset=utf8', 'root', '');
-$req = $bdd->prepare('SELECT * FROM inscrit WHERE email = :email AND passe = :passe');
+$req = $bdd->prepare('UPDATE inscrit SET passe = :passe WHERE email = :email');
 $req->execute(array(
     'email' => $_POST['email'],
     'passe' => $_POST['passe']
