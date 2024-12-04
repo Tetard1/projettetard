@@ -4,7 +4,8 @@ $bdd = new PDO('mysql:host=localhost;dbname=tli3;charset=utf8', 'root', '');
 $req = $bdd->prepare('SELECT * FROM inscrit WHERE email = :email AND passe = :passe');
 $req->execute(array(
     'email' => $_POST['email'],
-    'passe' => $_POST['passe']
+    'passe' => $_POST['passe'],
+    'Date-inscription' => date('Y-m-d')
 ));
 
 $donne = $req->fetch();
