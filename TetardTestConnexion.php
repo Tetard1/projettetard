@@ -5,7 +5,6 @@ $req = $bdd->prepare('SELECT * FROM inscrit WHERE email = :email AND passe = :pa
 $req->execute(array(
     'email' => $_POST['email'],
     'passe' => $_POST['passe'],
-    'Date-inscription' => date('Y-m-d')
 ));
 
 $donne = $req->fetch();
@@ -16,14 +15,13 @@ if ($donne == NULL) {
 else
     echo "vous êtes connecter ! ";
 
+$bdd2 = new PDO('mysql:host=localhost;dbname=tli3;charset=utf8', 'root', '');
+$req2 = $bdd2->prepare('SELECT * FROM inscrit WHERE nom = :nom AND Date_inscription = :date_inscription');
+$req2->execute(array(
+));
+$donne2 = $req2->fetch();
+var_dump($donne2);
 
-$name = array("$_POST[nom]", "$_POST[prenom]", "$_POST[email]");
-arsort($name);
-
-foreach ($name as $x => $x_value) {
-    echo "Key=" . $x . ", Value=" . $x_value;
-    echo "<br>";
-}
 
 
 ?>
