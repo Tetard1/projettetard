@@ -27,7 +27,7 @@ if ($donne == NULL) {
     echo "Votre profil a été crée ! ";
 }
 else
-    echo "vous avez déjà un compte veuillez vous connecter !";
+    echo "vous avez déjà un compte veuillez vous connecter ! ";
 
 
 
