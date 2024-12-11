@@ -1,8 +1,5 @@
 <?php
 session_start();
-
-echo "que voulez vous supprimer";
-
 var_dump($_POST);
 $bdd = new PDO('mysql:host=localhost;dbname=tli3;charset=utf8', 'root', '');
 $req = $bdd->prepare('SELECT * FROM inscrit WHERE email = :email AND passe = :passe');
