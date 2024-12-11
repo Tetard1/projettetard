@@ -16,6 +16,6 @@ if ($donne == NULL) {
 else
     $_SESSION['email'] = $donne['email'];
     echo "Bravo ma couille tu est connecter ! ";
-    header('Location: ../Accueil/accueil.html');
+    header('Location: ../Affichage_compte/Affichage_Compte.php');
 
 ?>
