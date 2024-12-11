@@ -1,4 +1,5 @@
 <?php
+session_start();
 var_dump($_POST);
 $bdd2 = new PDO('mysql:host=localhost;dbname=tli3;charset=utf8', 'root', '');
 $req2 = $bdd2->prepare('SELECT * FROM inscrit WHERE email = :email');
@@ -28,6 +29,7 @@ if ($donne == NULL) {
 }
 else
     echo "vous avez déjà un compte veuillez vous connecter ! ";
+    header('Location: TetardTestConnexion.php');
 
 
 
