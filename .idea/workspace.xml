@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aba78cf6-e0e5-4c04-a17d-b79cd0f13b3b" name="Changes" comment="" />
+    <list default="true" id="aba78cf6-e0e5-4c04-a17d-b79cd0f13b3b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/TetardTestConnexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/TetardTestConnexion.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
