@@ -15,7 +15,7 @@ if ($donne == NULL) {
 }
 else
     $_SESSION['email'] = $donne['email'];
-    echo "Bravo ma couille tes connecter ! ";
-    header('Location: modification.php');
+    echo "Bravo ma couille tu est connecter ! ";
+    header('Location: accueil.html');
 
 ?>

@@ -29,7 +29,7 @@ if ($donne == NULL) {
 }
 else
     echo "vous avez déjà un compte veuillez vous connecter ! ";
-    header('Location: TetardTestConnexion.php');
+    header('Location: TetardTestConnexion.html');
 
 
 
