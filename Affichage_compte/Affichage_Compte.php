@@ -17,6 +17,7 @@ foreach ($donne as $donnes) {
 
 echo "voici la liste des inscrits";
 
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -27,7 +28,7 @@ echo "voici la liste des inscrits";
 </head>
 <body>
 <form method="POST" action="../Modification/modification.html">
-    <input type="submit" name="modifier" value="Modifier le mdp du compte" /><br><br>
+<input type="submit" name="modifier" value="Modifier le mdp du compte" /><br><br>
 </form>
 
 <form method="POST" action="../Suppression/compte.html">

@@ -13,9 +13,10 @@ var_dump($donne);
 if ($donne == NULL) {
     echo "vous n'avez pas de compte! veuillez en crée un ! ";
 }
-else
-    $_SESSION['email'] = $donne['email'];
-    echo "Bravo ma couille tu est connecter ! ";
+else {
+    $_SESSION['email'] = $donne['email'];;
     header('Location: ../Affichage_compte/Affichage_Compte.php');
+}
+
 
 ?>
