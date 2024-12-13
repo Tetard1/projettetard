@@ -27,10 +27,8 @@ if ($donne == NULL) {
     ));
     echo "Votre profil a été crée ! ";
 }
-else
+else{
     echo "vous avez déjà un compte veuillez vous connecter ! ";
     header('Location: ../Connexion/TetardTestConnexion.html');
-
-
-
+}
 ?>
